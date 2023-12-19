@@ -55,14 +55,14 @@ To run the project we need to install node modules. To install node command is `
 
 N/A
 
-## Output of the website
+## Output video
 
 ![alt text](output.png)
 
 ## Link to deployed application
 
-()
+N/A
 
 ## License
 
-none
+None
