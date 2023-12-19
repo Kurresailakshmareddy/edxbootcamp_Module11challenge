@@ -1,6 +1,6 @@
 //Including packages needed for this application
 const fs = require("fs");
-const inquirer = import ("inquirer");
+const inquirer = require("inquirer");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -80,7 +80,8 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating Professional README.md File...");
-        writeToFile("README.md", generateMarkdown({... responses}));
+        writeToFile("README.md", generateMarkdown({responses}));
     });
 }
+
 init();
